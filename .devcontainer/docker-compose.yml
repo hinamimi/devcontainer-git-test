@@ -6,6 +6,5 @@ services:
       dockerfile: ./Dockerfile
     volumes:
       - ..:/workspace
-      - ./.bashrc:/root/.bashrc
       - ./git/:/root/git
     command: /bin/sh -c "while sleep 1000; do :; done"
